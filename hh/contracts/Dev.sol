@@ -1550,8 +1550,12 @@ contract Dev is ERC721Enumerable, ReentrancyGuard, Ownable {
         }
         return string(buffer);
     }
-    
-    constructor() ERC721("Devs for Revolution", "DEVS") Ownable() {}
+
+    function getName() public pure returns (int16) {
+        return 1;
+    }
+
+    constructor() ERC721("Ai3.co", "AI3CO") Ownable() {}
 }
 
 /// [MIT License]
